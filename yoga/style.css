@@ -1,0 +1,199 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+* {
+  font-family: "Besley", serif;
+  transition: 0.2s ease-in-out;
+}
+*::selection {
+  background: var(--main);
+  color: #000;
+}
+/* Root */
+:root {
+  --main: #ff07e2;
+  --box_shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.6);
+}
+.Heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.Heading h6 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #000;
+}
+.Heading p {
+  font-size: 12px;
+  margin: 15px auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+.btn {
+  border: 1px solid #fff;
+  color: #fff !important;
+  width: 300px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.btn:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+/* Navbar/Header Start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 2px solid #fff;
+  backdrop-filter: blur(7px);
+}
+.navbar-brand {
+  font-size: 2em;
+  color: #fff !important;
+  font-weight: 700;
+  padding: 0 50px;
+}
+.navbar-brand span {
+  color: var(--main) !important;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.navbar-nav {
+  padding: 0 50px;
+  margin-top: 20px;
+}
+.nav-link {
+  color: #fff !important;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+.nav-link:hover,
+.nav-link.active {
+  background: var(--main);
+  color: #fff !important;
+}
+/* Navbar/Header End */
+
+/* Home Section Start */
+.home {
+  position: relative;
+}
+.home img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.HomeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+.HomeContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.home .HomeContent h6 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.home .HomeContent h6 span {
+  color: var(--main) !important;
+  font-weight: 900;
+}
+.home .HomeContent p {
+  font-size: 13px;
+  margin: 20px auto;
+}
+/* Home Section End */
+
+/* Information Section Start */
+.information {
+  margin: 150px auto;
+}
+.information .mainRow {
+  margin: 100px auto;
+}
+.information .mainRow .container .box {
+  position: relative;
+  margin: 20px auto;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: var(--box_shadow);
+}
+.information .mainRow .container .box:hover {
+  transform: scale(1.05);
+}
+.information .mainRow .container .box h6 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+}
+.information .mainRow .container .box p {
+  font-size: 12px;
+}
+.information .mainRow img {
+  height: 450px;
+  cursor: pointer;
+  object-fit: cover;
+}
+/* Information Section End */
+
+/* Classes Section Start */
+.featured {
+  margin-bottom: 200px;
+}
+.featured .row {
+  margin: 100px auto;
+}
+.featured .box {
+  margin: 50px auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.featured .box img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: var(--box_shadow);
+}
+.featured .box:hover img {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.featured .box h6 {
+  font-size: 40px;
+  margin: 15px auto;
+}
+.featured .box:hover h6 {
+  color: var(--main);
+}
+/* Classes Section End */
+
+/* Footer Section Start */
+footer {
+  background: var(--main);
+  text-align: center;
+  padding: 10px;
+}
+footer a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+/* Footer Section End */
